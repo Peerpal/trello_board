@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:trello/utils/margins.dart';
+import 'package:trello/utils/tasks.dart';
 import 'package:trello/utils/theme.dart';
 import 'package:trello/views/profile_view.dart';
 
@@ -218,15 +219,7 @@ class TrelloBoard extends StatelessWidget {
                       ),
                     ),
                     Expanded(
-                      child: Container(
-                        margin:
-                            EdgeInsets.symmetric(vertical: 25, horizontal: 15),
-                        padding: EdgeInsets.all(15),
-                        decoration: BoxDecoration(
-                            color: greyBackground,
-                            borderRadius: BorderRadius.circular(13)),
-                        child: Text("Hola"),
-                      ),
+                      child: TaskView()
                     ),
                     ProfileView(),
                   ],
