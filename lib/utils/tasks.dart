@@ -170,6 +170,7 @@ class _TaskViewState extends State<TaskView> {
                     runSpacing: 10,
                     controller: _scrollController,
                     onReorder: _onReorder,
+                    needsLongPressDraggable: false,
                     onNoReorder: (int index) {
                       //this callback is optional
                       debugPrint(
